@@ -1,4 +1,4 @@
-# ChatBot
+# Chatbot background
 ## NLP
 
 ## RNN
