@@ -128,6 +128,21 @@ This words will be the input data to the embedding block, like it was explained 
 
 </p>
 
+Then that tokens will go to the _positional encoder_, which gives to each word his position in the whole sequence, if we had a longer sentence like 'I like fast food because...' this block is in charge to position 'I' at the first place of the sequence, to do that it applies mathematical functions, cos & sen to the tokens, basically it gives to the system the infomation about in what position each word has been placed.
+
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/e5ae7070-5b63-4e74-ad40-cc3747fadaf8"/>
+
+</p>
+
+And finally that _green_ sequence goes as input to the encoder and decoder.
+
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b21a82b3-824a-4c8c-a28c-9c5a5e105f43"/>
+
+</p>
 
 
 - 🟨 **Encoder**:
