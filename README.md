@@ -120,6 +120,16 @@ As you can see this is a Supervised ML type, we have **X** input data and **Y** 
 
 </p>
 
+This words will be the input data to the embedding block, like it was explained previously the embedding block converts the words to vectors (tokens).
+
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/04084198-b8cd-46bc-a80c-8e3dd638dbf2"/>
+
+</p>
+
+
+
 - 🟨 **Encoder**:
 
 - 🟩 **Decoder**:
