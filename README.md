@@ -65,7 +65,7 @@ We change the neural network arquitecture to RNN, now we have another input at t
 ![RNN](https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512)
 
 ### Explanation
-![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/421c6ad6-566f-4ded-868f-fe000bf41237)
+![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/670868b2-e5cf-4153-8874-41cc770aaf55)
 
 Focus on the left neuron, it has an input `X`, a summation `∑`, the activation fuunction and an output `ŷ`
 
