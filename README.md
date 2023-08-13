@@ -1,4 +1,5 @@
 # Chatbot background
+> This repository has been made after [ANN](https://github.com/RogerCL24/ANN), some concepts are explained there.
 ## NLP (Natural Language Processing)
 Example: We want to train a model in order to make it classify documents in a positive box comment or in negative box comment, the first thing to come up in our mind is using a normal Neural Network like this one, the input will be the text, then the hidden layers decides in which output perceptron of the output layer is the text classified (positive or negative).
 
@@ -48,9 +49,11 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
   
   ![Embedding](https://github.com/RogerCL24/ChatBot/assets/90930371/23984e52-9827-4219-a273-31cbc74453df)
 
-  As we are humans we can not represent 7D objects, consequently we use dimensionality reduction techniques to give a proper represention of the embedded words, as you can see, for instance, cat and kitten are more close than cat and houses.
-  This way we are allowed to make vector operations, for instance if I subtract queen to king it should give women
+  As we are humans we can not represent 7D objects, consequently we use dimensionality reduction techniques to give a proper represention of the embedded words. As you can see, for instance, cat and kitten are more close than cat and houses.
+  This way we are allowed to make vector operations, for instance if I subtract queen to king it should give women.
 
-## RNN
+## RNN (Recurrent Neural Metwork)
+Firsty, what is 'memory', memory is a brain function that allows the organism code, store and retrieve ``past`` information. Up to now we have been using a neural network that classifies 
+
 
 ## Transformers
