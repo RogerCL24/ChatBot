@@ -81,8 +81,10 @@ Same functionality but with more neurons to improve performance, obviously the d
 
 As a means to solve the former problem of memory loss, Google published the paper _Attention all you need_ at 2017, this paper basically put forward the new model architecture - **The transformer** - .
 
+<p align="center">
+  
 ![Trans](https://github.com/RogerCL24/ChatBot/assets/90930371/3b441e25-3b3e-4ad1-896d-340703af74f4)
-
+<br/>
 
 
 
