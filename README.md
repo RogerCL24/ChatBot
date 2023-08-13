@@ -60,9 +60,14 @@ The problem comes when we have sequences, where the sequence elements has a logi
 So the video or the text can not be input data of this type of neural networks, because each neuron only can store 1 data at the same time, and the sequences depends temporarily from the previous items of the sequence, so we need more than 1 input here.
 
 ### Solution
-We change the neural network arquitecture to RNN, now we have another input at the same neuron to modulate the output order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
+We change the neural network arquitecture to RNN, now we have another input at the same neuron to modulate the output secuence order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
 
 ![RNN](https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512)
+
+### Explanation
+![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/421c6ad6-566f-4ded-868f-fe000bf41237)
+
+Focus on the left neuron, it has an input `X`, a summation `∑`, the activation fuunction and an output `ŷ`
 
 
 
