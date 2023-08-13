@@ -79,7 +79,7 @@ That was only 1 neuron, in a layer would be like this.
 
 ![lay](https://github.com/RogerCL24/ChatBot/assets/90930371/076f2dc2-5c8d-42fe-bb0e-450e728debe8)
 
-Same functionality but with more neurons to improve performance, obviously the data used as feed back is stored in memory in order to keep it for further inputs, that produces a problem of memory with long sequences, there too many words to store and we can not save them all, **solution** -> Transformers ⬇️
+Same functionality but with more neurons to improve performance, obviously the data used as feed back is stored in memory in order to keep it for further inputs, that produces a problem of memory with long sequences, there are too many words to store and we can not save them all, **solution** -> Transformers ⬇️
 
 ## Transformers
 
