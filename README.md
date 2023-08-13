@@ -5,11 +5,11 @@ Example: We want to train a model in order to make it classify documents in a po
 
 ![NLP](https://github.com/RogerCL24/ChatBot/assets/90930371/bf26611d-1397-4c58-ae59-16e19dadcf2d)
 
-###Problem
+### Problem
 
 We cannot hand over text inputs to the perceptrons, we already know the perceptron does a summaton of the inputs multiplied by the weights, we can not multiply _"hello" * 0.345 = ?_, therefore we will not be able to propagate forward the data and that means we can not calculate the error and update the weights to auto-improve the model.
 
-###Solution
+### Solution
 
 - Text to number conversion, there are several techniques:
   - _Random numbers_: Allocate a random number to each character or word. The ASCII code.
@@ -55,11 +55,11 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
 ## RNN (Recurrent Neural Metwork)
 Firsty, what is 'memory', memory is a brain function that allows the organism code, store and retrieve ``past`` information. Up to now we have been using a neural network that classifies images that do not dependend of any time var, if the image is a dog our model will classify it as a dog (if it's well implemented) regardless any other input.
 
-###Problem
+### Problem
 The problem comes when we have sequences, where the sequence elements has a logic order. For intance, a video is a sequence of images indexed in time or a text, a sequence of words with a logic order to give sense to the word sequence. 
 So the video or the text can not be input data of this type of neural networks, because each neuron only can store 1 data at the same time, and the sequences depends temporarily from the previous items of the sequence, so we need more than 1 input here.
 
-###Solution
+### Solution
 We change the neural network arquitecture to RNN, now we have another input at the same neuron to modulate the output order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
 
 ![RNN](https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512)
