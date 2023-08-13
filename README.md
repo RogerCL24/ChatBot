@@ -36,7 +36,7 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
   
   ![MAt](https://github.com/RogerCL24/ChatBot/assets/90930371/4260d548-b3de-4d72-8a13-c6332bff2e61)
 
-  Second, in order to compact the matrix to make our NLP more efficiente we give the one-hot-encoded word (the vector) as an input data to the Neural Network architecture, the embedding.
+  Second, in order to compact the matrix to make our NLP more efficient we give the one-hot-encoded word (the vector) as an input data to the Neural Network architecture, the embedding.
   
   ![NN](https://github.com/RogerCL24/ChatBot/assets/90930371/dd8d0eff-8f8f-41a3-a670-e42b683443f0)
 
