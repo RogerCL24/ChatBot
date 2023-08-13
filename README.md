@@ -10,7 +10,12 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
 
 **Solution**
 
-- Text to number conversion
+- Text to number conversion, there are several techniques:
+  - _Random numbers_: Allocate a random number to each character or word.
+    ![Standard-ASCII-Table_large](https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240)
+
+  - _One - Hot - Encoding_:
+  - _Embeddings_:
 
 
 ## RNN
