@@ -67,7 +67,8 @@ We change the neural network arquitecture to RNN, now we have another input at t
 ### Explanation
 ![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/670868b2-e5cf-4153-8874-41cc770aaf55)
 
-Focus on the left neuron, it has an input `X`, a summation `∑`, the activation fuunction and an output `ŷ`
+Focus on the left neuron, it has an input `X`, a summation `∑`, the activation function and an output `ŷ` up to now that is as always, but now we got another output that feeds back our neuron making it a new input.
+Now the right figure which has several neurons, it has not, is the same neuron through the time, as you cna observe we have the first input `X<sub>(1)</sub>`
 
 
 
