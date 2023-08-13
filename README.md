@@ -67,9 +67,8 @@ We change the neural network arquitecture to RNN, now we have another input at t
 ### Explanation
 ![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/670868b2-e5cf-4153-8874-41cc770aaf55)
 
-Focus on the left neuron, it has an input `X`, a summation `∑`, the activation function and an output `ŷ` up to now that is as always, but now we got another output that feeds back our neuron making it a new input.
-Now the right figure which has several neurons, it has not, is the same neuron through the time, as you cna observe we have the first input `X<sub>(1)</sub>`
-
+Focus on the left neuron, it has an input `X`, a summation `∑`, the activation function and an output `ŷ` up to now it is as always, but now we got another output that feeds back our neuron making it a new input.
+Now the right figure which has several neurons, it has not, is the same neuron through the time, as you cna observe we have the first input `X(0)` -> 'La': so `ŷ(0)` will be 'The', ``X(1)`` -> 'manzana': `ŷ(1)` will be 'The apple' because we have the other input data from before, besides the current one, `X(2)` -> 'roja': so `ŷ(2)` will be 'The red apple', as you see the order changes due to the grammatical rules, for that reason is important this arquitecture to follow the sequence, finally `X(3)` -> 'vuela': so `ŷ(3)` will be 'The red apple flies', cause the feed back input returns 'The red apple'.
 
 
 ## Transformers
