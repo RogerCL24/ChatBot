@@ -83,7 +83,7 @@ As a means to solve the former problem of memory loss, Google published the pape
 
 <p align="center">
   
-![Trans](https://github.com/RogerCL24/ChatBot/assets/90930371/3b441e25-3b3e-4ad1-896d-340703af74f4)
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/3b441e25-3b3e-4ad1-896d-340703af74f4"/>
 
 </p>
 
