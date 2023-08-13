@@ -114,9 +114,11 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 
 As you can see this is a Supervised ML type, we have **X** input data and **Y** output data or labeled values, the inputs goes to the encoder and the outputs goes to the decoder, both of them go through an embedding block and a positional block -> For example, let's do a translation of _'I love fast food'_:
 
-![Emb](https://github.com/RogerCL24/ChatBot/assets/90930371/7cbf7a05-981b-4f14-a215-202f0bfd82d3)
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/7cbf7a05-981b-4f14-a215-202f0bfd82d3"/>
 
-
+</p>
 
 - 🟨 **Encoder**:
 
