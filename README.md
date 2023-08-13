@@ -91,8 +91,19 @@ As a means to solve the former problem of memory loss, Google published the pape
 
 </p>
 
+ The tranformer is a deep learning (DL) model, based on a ``self-attention`` mechanism that weights the importance of each part of the input data differently. It is mainly used in computer vision (CV) and natural language processing (NLP).
 
+ NLP's Transformer is a new architecture that aims to solve tasks sequence-to-sequence while easily handling long-distance dependencies (memory loss). Computing the input and output representations without using sequence-aligned RNNs or convolutions and it relies entirely on ``self-attention``.
 
+### Blocks
+The Transformer is divided in 3 main blocks, and 2 of them has the most important part of the architecture, the ``self-attention`` blocks.
 
+![Blocks](https://github.com/RogerCL24/ChatBot/assets/90930371/27f27e98-914a-492b-8339-2a41ce0803bf)
+
+- `rgb(9, 105, 218)` **Input embeddings**:
+
+- `rgb(9, 105, 218)` **Encoder**:
+
+- `rgb(9, 105, 218)` **Decoder**:
 
 
