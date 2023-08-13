@@ -112,7 +112,7 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 
 </p>
 
-As you can see this is a Supervised ML type, we have **X** input data and **Y** output data or labeled values, the inputs goes to the encoder and the outputs goes to the decoder, both of them go through an embedding block and a positional block -> For example, let's do a translation of _'I love fast food'_:
+  - As you can see this is a Supervised ML type, we have **X** input data and **Y** output data or labeled values, the inputs goes to the encoder and the outputs goes to the decoder, both of them go through an embedding block and a positional block -> For example, let's do a translation of _'I love fast food'_:
 
 <p align="center">
   
@@ -120,7 +120,7 @@ As you can see this is a Supervised ML type, we have **X** input data and **Y** 
 
 </p>
 
-This words will be the input data to the embedding block, like it was explained previously the embedding block converts the words to vectors (tokens).
+  - This words will be the input data to the embedding block, like it was explained previously the embedding block converts the words to vectors (tokens).
 
 <p align="center">
   
@@ -128,7 +128,7 @@ This words will be the input data to the embedding block, like it was explained 
 
 </p>
 
-Then that tokens will go to the _positional encoder_, which gives to each word his position in the whole sequence, if we had a longer sentence like 'I like fast food because...' this block is in charge to position 'I' at the first place of the sequence, to do that it applies mathematical functions, cos & sen to the tokens, basically it gives to the system the infomation about in what position each word has been placed.
+  - Then that tokens will go to the _positional encoder_, which gives to each word his position in the whole sequence, if we had a longer sentence like 'I like fast food because...' this block is in charge to position 'I' at the first place of the sequence, to do that it applies mathematical functions, cos & sen to the tokens, basically it gives to the system the infomation about in what position each word has been placed.
 
 <p align="center">
   
@@ -136,7 +136,7 @@ Then that tokens will go to the _positional encoder_, which gives to each word h
 
 </p>
 
-And finally that _green_ sequence goes as input to the encoder and decoder.
+  - And finally that _green_ sequence goes as input to the encoder and decoder.
 
 <p align="center">
   
