@@ -60,7 +60,7 @@ The problem comes when we have sequences, where the sequence elements has a logi
 So the video or the text can not be input data of this type of neural networks, because each neuron only can store 1 data at the same time, and the sequences depends temporarily from the previous items of the sequence, so we need more than 1 input here.
 
 ### Solution
-We change the neural network arquitecture to RNN, now we have another input at the same neuron to modulate the output secuence order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
+We change the neural network architecture to RNN, now we have another input at the same neuron to modulate the output secuence order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
 
 ![RNN](https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512)
 
@@ -69,7 +69,7 @@ We change the neural network arquitecture to RNN, now we have another input at t
 
 Focus on the left neuron, it has an input `X`, a summation `∑`, the activation function and an output `ŷ` up to now it is as always, but now we got another output that feeds back our neuron making it a new input.
 
-Now the right figure which has several neurons, it has not, is the same neuron through the time, as you can observe we have the first input `X(0)` -> _'La'_: so `ŷ(0)` will be _'The'_, ``X(1)`` -> _'manzana'_: `ŷ(1)` will be _'The apple'_ because we have the other input data from before, besides the current one, `X(2)` -> _'roja'_: so `ŷ(2)` will be _'The red apple'_, as you see the order changes due to the grammatical rules, for that reason is important this arquitecture to follow the sequence, finally `X(3)` -> _'vuela'_: so `ŷ(3)` will be _'The red apple flies'_, cause the feed back input returns _'The red apple'_.
+Now the right figure which has several neurons, it has not, is the same neuron through the time, as you can observe we have the first input `X(0)` -> _'La'_: so `ŷ(0)` will be _'The'_, ``X(1)`` -> _'manzana'_: `ŷ(1)` will be _'The apple'_ because we have the other input data from before, besides the current one, `X(2)` -> _'roja'_: so `ŷ(2)` will be _'The red apple'_, as you see the order changes due to the grammatical rules, for that reason is important this architecture to follow the sequence, finally `X(3)` -> _'vuela'_: so `ŷ(3)` will be _'The red apple flies'_, cause the feed back input returns _'The red apple'_.
 
 That was only 1 neuron, in a layer would be like this.
 
@@ -78,3 +78,14 @@ That was only 1 neuron, in a layer would be like this.
 Same functionality but with more neurons to improve performance, obviously the data used as feed back is stored in memory in order to keep it for further inputs, that produces a problem of memory with long sequences, there too many words to store and we can not save them all, **solution** -> Transformers ⬇️
 
 ## Transformers
+
+As a means to solve the former problem of memory loss, Google published the paper _Attention all you need_ at 2017, this paper basically put forward the new model architecture - **The transformer** - .
+
+![Trans](https://github.com/RogerCL24/ChatBot/assets/90930371/3b441e25-3b3e-4ad1-896d-340703af74f4)
+
+
+
+
+
+
+
