@@ -12,6 +12,7 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
 
 - Text to number conversion, there are several techniques:
   - _Random numbers_: Allocate a random number to each character or word. The ASCII code.
+  - 
     ![Standard-ASCII-Table_large](https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240)
     Using this technique makes the model or the neural network focus on the character too much (redundantly detailed), that produces the model to lose focus on the context. Therefore we have to do a zoom out and aim the words, namely, we number the words instead of the characters.
 
@@ -31,6 +32,7 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
   - _Embeddings_: As everyone knows matrix has a huge computacional cost in the our computer performance, so let's going to reduce the matrix size joinning the NLP (one-hot-encoding) with neural networks.
    
   First we have this matrix 4 x 4.
+  
   ![MAt](https://github.com/RogerCL24/ChatBot/assets/90930371/4260d548-b3de-4d72-8a13-c6332bff2e61)
 
   Second, in order to compact the matrix to make our NLP more efficiente we give the one-hot-encoded word (the vector) as an input data to the Neural Network architecture, the embedding.
