@@ -5,6 +5,7 @@ Example: We want to train a model in order to make it classify documents in a po
 ![NLP](https://github.com/RogerCL24/ChatBot/assets/90930371/bf26611d-1397-4c58-ae59-16e19dadcf2d)
 
 **Problem**
+
 We cannot hand over text inputs to the perceptrons, we already know the perceptron does a summaton of the inputs multiplied by the weights, we can not multiply "hello" * 0.345 = ?, therefore we will not be able to propagate forward the data and that means we can not calculate the error and update the weights to auto-improve the model.
 
 **Solution**
