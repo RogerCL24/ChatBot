@@ -14,9 +14,9 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
 - Text to number conversion, there are several techniques:
   - _Random numbers_: Allocate a random number to each character or word. The ASCII code.
 
-    <p align = "center">
+    <p align="center">
       
-   <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240">
+   <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240"/>
    
     </p>
     Using this technique makes the model or the neural network focus on the character too much (redundantly detailed), that produces the model to lose focus on the context. Therefore we have to do a zoom out and aim the words, namely, we number the words instead of the characters.
