@@ -104,14 +104,10 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 
 </p>
 
-```diff
-- text
-+ hola
-```
--  **Input embeddings**:
+- 🟦 **Input embeddings**:
 
-- `rgb(9, 105, 218)` **Encoder**:
+- 🟨 **Encoder**:
 
-- `rgb(9, 105, 218)` **Decoder**:
+- 🟩 **Decoder**:
 
 
