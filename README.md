@@ -98,9 +98,17 @@ As a means to solve the former problem of memory loss, Google published the pape
 ### Blocks
 The Transformer is divided in 3 main blocks, and 2 of them has the most important part of the architecture, the ``self-attention`` blocks.
 
-![Blocks](https://github.com/RogerCL24/ChatBot/assets/90930371/27f27e98-914a-492b-8339-2a41ce0803bf)
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/27f27e98-914a-492b-8339-2a41ce0803bf"/>
 
-- `rgb(9, 105, 218)` **Input embeddings**:
+</p>
+
+```diff
+- text
++ hola
+```
+-  **Input embeddings**:
 
 - `rgb(9, 105, 218)` **Encoder**:
 
