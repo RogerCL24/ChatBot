@@ -226,6 +226,13 @@ Probably the most important block of the Transformer architecture, this block wi
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/80c4c570-09fe-4a5a-9526-3c3553adcc97"/>
 </p>
 
+- Now we have 2 tokens as input to the Add & Norm, the Attention block output and the embedding output.
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/f789ba04-60b5-4488-8915-fb5742c0ab0f"/>
+</p>
+
 
 - 🟩 **Decoder**:
 
