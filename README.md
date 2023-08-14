@@ -3,7 +3,10 @@
 ## NLP (Natural Language Processing)
 Example: We want to train a model in order to make it classify documents in a positive box comment or in negative box comment, the first thing to come up in our mind is using a normal Neural Network like this one, the input will be the text, then the hidden layers decides in which output perceptron of the output layer is the text classified (positive or negative).
 
-![NLP](https://github.com/RogerCL24/ChatBot/assets/90930371/bf26611d-1397-4c58-ae59-16e19dadcf2d)
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/bf26611d-1397-4c58-ae59-16e19dadcf2d"/>
+</p>
 
 ### Problem
 
@@ -22,9 +25,12 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
   Using this technique makes the model or the neural network focus on the character too much (redundantly detailed), that produces the model to lose focus on the context. Therefore we have to do a zoom out and aim the words, namely, we number the words instead of the characters.
 
   For instance, `Codificar` = 1 & `Palabra` = 2, then we use a matrix N x N, where N is equal to the total number of words in our vocabulary. <sub> In this case N = 2 </sub>
-  
-  ![Matrix](https://github.com/RogerCL24/ChatBot/assets/90930371/3dd41e2c-2bc9-4019-b0ca-d9fa1766d6b0)
 
+  <p align="center"> 
+  
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/3dd41e2c-2bc9-4019-b0ca-d9fa1766d6b0"/>
+  </p>
+  
   Wherever there is a match between the row and the column a 1 will be placed <sub> only can be one 1 in each row and column </sub>, otherwise we place a 0. The process to turn words into numbers or vectors (matrix) is called ``tokenization``.
   A token is each word or subword numerically coded
  
