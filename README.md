@@ -128,7 +128,6 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 <p align="center">
   
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/04084198-b8cd-46bc-a80c-8e3dd638dbf2"/>
-
 </p>
 
   - Then that tokens will go to the _positional encoder_, which gives to each word his position in the whole sequence, if we had a longer sentence like 'I like fast food because...' this block is in charge to position 'I' at the first place of the sequence, to do that it applies mathematical functions, cos & sen to the tokens, basically it gives to the system the infomation about in what position each word has been placed.
@@ -136,7 +135,6 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 <p align="center">
   
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/e5ae7070-5b63-4e74-ad40-cc3747fadaf8"/>
-
 </p>
 
   - And finally that _green_ sequence goes as input to the encoder and decoder.
@@ -144,7 +142,6 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 <p align="center">
   
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b21a82b3-824a-4c8c-a28c-9c5a5e105f43"/>
-
 </p>
 
 
@@ -155,7 +152,33 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/1d15a04e-f343-45c8-92e1-855c9193c792"/>
 </p>
 
+### Multi-Head Attention block
+Probably the most important block of the Transformer architecture, this block will take as input data the tokens (already positioned) from the embedding output.
 
+<p align="center" >
+  
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/e13cc4ad-17f7-4572-9e88-b35c7f43dc55"/>
+</p>
+
+- This tokens will go through 3 different Neural Networks, each one is trained to give 3 different vectors -> `Queries`, `Keys` & `Values`.
+
+- The `Queries` vectors are related with the `Keys` vectors.
+
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/ef805134-c953-437d-818d-597584b388df"/>
+</p>
+
+- I meant, that we have to found which ``queries`` has more likeliness with each `key`, namely, what words have a context more similar than the other words, in order to match correctly the sequence.
+
+- This procedure is done by the _attention matrix_, this matrix is a cross product between the two vectors (query and key), as we know the result of a cross product is numerical measure of how similar are those vectors spatially.
+
+- After that cross product we apply a Softmax function to determine the probabilities that one word is related to another.
+
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/a7d8ccdd-e620-4682-8698-d51781c7456b"/>
+</p>
 
 - 🟩 **Decoder**:
 
