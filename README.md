@@ -273,7 +273,7 @@ Finally, once we have our token(matrix) normalized is easier to learn so we pass
 
 <p align="center">
 
-<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b5a7c501-134e-4ba8-8071-fa01074ec0a9"/>
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b051b882-d701-4a75-8b1a-136f090a16a8"/>
 </p>
 
 - The next block (Multi-head attention) executes the same steps as the encoder attention block, but with different inputs (3), 1 will be the output of the encoder (features) that goes to the values vectors and the other 2 are the output from the masked attention block because they are the words we are going to train with.
