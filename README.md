@@ -226,13 +226,21 @@ Probably the most important block of the Transformer architecture, this block wi
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/80c4c570-09fe-4a5a-9526-3c3553adcc97"/>
 </p>
 
-- Now we have 2 tokens as input to the Add & Norm, the Attention block output and the embedding output.
+- Now we have 2 tokens as input to the Add & Norm, the Attention block output and the positional encoding output as a residual connection, this residual connections (there are 5) are actually done to ensure there is a stronger information signal that flows through deep networks, in fact this required because in backpropagation you can notice that there are vanishing gradients, which means that at sometime there will be a case where as you keep backpropagating the gradient update becomes 0 (there is not correction of then weight value) and the model stops learning, in order to prevent that we induce more stronger signals from the input in different parts of the network.
 
 <p align="center">
 
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/f789ba04-60b5-4488-8915-fb5742c0ab0f"/>
 </p>
 
+This 2 tokens will be added and normalized, the normalization is a layer which each neuron connected to the network of the layer instead of use activations of a large range of positve and negative values normalization encapsulates this values within a smaller range, tipically centered around 0, this allow us to have a much more stable training as during the backpropagation phase and we actually perform a gradient step we are taking much more even steps so it is now easier to learn and hence it is faster, and now we can get to the optimal position or the optimal parameter values more consistently.
+
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/2ea9c7e4-e5a6-47a8-a5fd-e223aa85dab4"/>
+</p>
+
+Finally, once we have our token(matrix) normalized is easier to learn so pass it Feed Forward Neural Network to learn/train, then we normalize again the token in order to remove workload to the last main block the `Decoder`.
 
 - 🟩 **Decoder**:
 
