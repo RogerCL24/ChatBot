@@ -14,11 +14,10 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
 - Text to number conversion, there are several techniques:
   - _Random numbers_: Allocate a random number to each character or word. The ASCII code.
 
-    <p align="center">
+ <p align="center">
       
-   <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240"/>
-   
-    </p>
+ <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/dfaa0c19-9ac6-41f4-ad61-dfe1ded97240"/>
+ </p>
     
     Using this technique makes the model or the neural network focus on the character too much (redundantly detailed), that produces the model to lose focus on the context. Therefore we have to do a zoom out and aim the words, namely, we number the words instead of the characters.
 
@@ -56,7 +55,7 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
   As we are humans we can not represent 7D objects, consequently we use dimensionality reduction techniques to give a proper represention of the embedded words. As you can see, for instance, cat and kitten are more close than cat and houses.
   This way we are allowed to make vector operations, for instance if I subtract queen to king it should give women.
 
-## RNN (Recurrent Neural Metwork)
+## RNN (Recurrent Neural Network)
 Firsty, what is 'memory', memory is a brain function that allows the organism code, store and retrieve ``past`` information. Up to now we have been using a neural network that classifies images that do not dependend of any time var, if the image is a dog our model will classify it as a dog (if it's well implemented) regardless any other input.
 
 ### Problem
