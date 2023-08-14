@@ -269,5 +269,28 @@ Finally, once we have our token(matrix) normalized is easier to learn so we pass
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/0690356f-2e79-4471-8b23-2fb47d845f03"/>
 </p>
 
-- For that reason 
+- For that reason the name of the attention blocs has the word **Masked**, we are masking the unkown words with a 0 and unmaskig the knowned words wiht another value, that gives us a lower diagonal matrix.
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b5a7c501-134e-4ba8-8071-fa01074ec0a9"/>
+</p>
+
+- The next block (Multi-head attention) executes the same steps as the encoder attention block, but with different inputs (3), 1 will be the output of the encoder (features) that goes to the values vectors and the other 2 are the output from the masked attention block because they are the words we are going to train with.
+
+### Final layer
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/02f232ea-eb28-43bb-b5ea-389ebbef10ad"/>
+</p>
+
+- Finally, and passing by the feed forward neural network, we have our model trained, the output of the decoder will go through a neural network with a softmax layer, the softmax funciton will find all the probabilities of the ouput vector, that means, if our output vector is the whole dictionary, the position (word) where we have the largest numeric value means that it has the highest probability to be the next word in the sequence or the word to be translated.
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/58457629-ccb2-4464-9a57-076cd32442a0"/>
+</p>
+
+
 
