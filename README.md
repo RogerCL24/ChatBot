@@ -243,5 +243,31 @@ Probably the most important block of the Transformer architecture, this block wi
 Finally, once we have our token(matrix) normalized is easier to learn so we pass it to a Feed Forward Neural Network to learn/train, then we normalize again the token in order to remove workload to the last main block the `Decoder`.
 
 - 🟩 **Decoder**:
+<p align="center"> 
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/d102604d-7475-4344-b4fc-61e00fb11153"/>
+</p>
 
+- The decoder block is similar to the encoder block, except it calculates the source-target attention.
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/7ab81efd-8fd3-4359-a198-3d7ecfbfc817"/>
+</p>
+
+- The input of the decoder is the ouput data (the sentence already translated) in order to train, the rest is the same as the encoder except the ``softmax`` function, now softmax has a masking operation for the scoring matrix.
+
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/c837ee88-6130-4415-ae90-66e0f341737e"/>
+</p>
+
+- As we are applying a training to our network model with unknown words (the words already translated), therefore if we are in the `La` word the network can only use the words that has already seen, namely, `Amo` & `la`.
+
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/0690356f-2e79-4471-8b23-2fb47d845f03"/>
+</p>
+
+- For that reason 
 
