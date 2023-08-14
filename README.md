@@ -226,7 +226,7 @@ Probably the most important block of the Transformer architecture, this block wi
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/80c4c570-09fe-4a5a-9526-3c3553adcc97"/>
 </p>
 
-- Now we have 2 tokens as input to the Add & Norm, the Attention block output and the positional encoding output as a residual connection, this residual connections (there are 5) are actually done to ensure there is a stronger information signal that flows through deep networks, in fact this is required because in backpropagation you can notice that there are vanishing gradients, which means that at sometime there will be a case where as you keep backpropagating the gradient update becomes 0 (there is not correction of then weight value) and the model stops learning, in order to prevent that we induce more stronger signals from the input in different parts of the network.
+- Now we have 2 tokens as input to the Add & Norm, the Attention block output and the positional encoding output as a residual connection, this residual connections (there are 5) are actually done to ensure there is a stronger information signal that flows through deep networks, in fact this is required because in backpropagation you can notice that there are vanishing gradients, which means that at sometime there will be a case where as you keep backpropagating the gradient update becomes 0 (there is not correction of the weight value) and the model stops learning, in order to prevent that we induce more stronger signals from the input in different parts of the network.
 
 <p align="center">
 
