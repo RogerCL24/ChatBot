@@ -210,7 +210,7 @@ Probably the most important block of the Transformer architecture, this block wi
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/a7d8ccdd-e620-4682-8698-d51781c7456b"/>
 </p>
 
-- As they are probabilities the max value of each tuple is 1, that is, for example `I` has _0.9_ at **I** column, makes sense, _0.05_ at **Love** column, is the second bigger value because the most rational combiantion is `I love` ¡, rather than `I fast` or `I food`, then we have _0.03_ at **Fast** column and finally _0.02_ at **Food** column in total -> 0.9 + 0.05 + 0.03 + 0.02 = 1 <sub> You can check each tuple and it will give 1 as well </sub>, this can be known as scoring matrix.
+- As they are probabilities the max value of each tuple is 1, that is, for example `I` has _0.9_ at **I** column, makes sense, _0.05_ at **Love** column, is the second bigger value because the most rational combiantion is `I love`, rather than `I fast` or `I food`, then we have _0.03_ at **Fast** column and finally _0.02_ at **Food** column in total -> 0.9 + 0.05 + 0.03 + 0.02 = 1 <sub> You can check each tuple and it will give 1 as well </sub>, this can be known as scoring matrix.
 
 <p align="center">
 
