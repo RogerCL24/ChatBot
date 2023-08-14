@@ -36,7 +36,10 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
  
   - _One - Hot - Encoding_: Similar to _random_numbers_ technique, we have a N x N square matrix, where N is the total of words of our vocabulary.
 
-  ![One hot](https://github.com/RogerCL24/ChatBot/assets/90930371/acaac097-a2e3-4952-8353-22b53ee90643)
+  <p align="center">
+    
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/acaac097-a2e3-4952-8353-22b53ee90643"/>
+  </p>
 
   Each vector is a word, now the word 'Codificar' is represented as the 1,0,0,0 vector, therefore when the neural network reads a 1,0,0,0 vector knows that is the word 'Codificar', each vector is a different token.
 
@@ -44,19 +47,31 @@ We cannot hand over text inputs to the perceptrons, we already know the perceptr
    
   First we have this matrix 4 x 4.
   
-  ![MAt](https://github.com/RogerCL24/ChatBot/assets/90930371/4260d548-b3de-4d72-8a13-c6332bff2e61)
+  <p align="center">
+  
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/4260d548-b3de-4d72-8a13-c6332bff2e61"/>
+  </p>
 
   Second, in order to compact the matrix to make our NLP more efficient we give the one-hot-encoded word (the vector) as an input data to the Neural Network architecture, the embedding.
-  
-  ![NN](https://github.com/RogerCL24/ChatBot/assets/90930371/dd8d0eff-8f8f-41a3-a670-e42b683443f0)
 
-  Finally, the output layer gives us another vector with the size we want, for instance 4 x 1.
+  <p align="center">
+    
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/dd8d0eff-8f8f-41a3-a670-e42b683443f0"/>
+  </p>
   
-  ![Resot](https://github.com/RogerCL24/ChatBot/assets/90930371/4a5045fa-4762-494b-91b5-81be06d116cb)
+  Finally, the output layer gives us another vector with the size we want, for instance 4 x 1.
+
+  <p align="center">
+    
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/4a5045fa-4762-494b-91b5-81be06d116cb"/>
+  </p>
 
   A simple real sample would be this one, where each word is the data input (cat, kitten...) and the columns are the context (feline, human...).
+
+  <p align="center">
   
-  ![Embedding](https://github.com/RogerCL24/ChatBot/assets/90930371/23984e52-9827-4219-a273-31cbc74453df)
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/23984e52-9827-4219-a273-31cbc74453df"/>
+  </p>
 
   As we are humans we can not represent 7D objects, consequently we use dimensionality reduction techniques to give a proper represention of the embedded words. As you can see, for instance, cat and kitten are more close than cat and houses.
   This way we are allowed to make vector operations, for instance if I subtract queen to king it should give women.
@@ -71,10 +86,17 @@ So the video or the text can not be input data of this type of neural networks, 
 ### Solution
 We change the neural network architecture to RNN, now we have another input at the same neuron to modulate the output secuence order, depending indeed on the time `t = 1, t = 2, t = 3,...,t = n`
 
-![RNN](https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512)
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/ca21162b-46d2-4be2-8893-cb512256b512"/>
+</p>
 
 ### Explanation
-![neuron](https://github.com/RogerCL24/ChatBot/assets/90930371/670868b2-e5cf-4153-8874-41cc770aaf55)
+
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/670868b2-e5cf-4153-8874-41cc770aaf55"/>
+</p>
 
 Focus on the left neuron, it has an input `X`, a summation `∑`, the activation function and an output `ŷ` up to now it is as always, but now we got another output that feeds back our neuron making it a new input.
 
@@ -82,7 +104,10 @@ Now the right figure which has several neurons, it has not, is the same neuron t
 
 That was only 1 neuron, in a layer would be like this.
 
-![lay](https://github.com/RogerCL24/ChatBot/assets/90930371/076f2dc2-5c8d-42fe-bb0e-450e728debe8)
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/076f2dc2-5c8d-42fe-bb0e-450e728debe8"/>
+</p>
 
 Same functionality but with more neurons to improve performance, obviously the data used as feed back is stored in memory in order to keep it for further inputs, that produces a problem of memory with long sequences, there are too many words to store and we can not save them all, **solution** -> Transformers ⬇️
 
@@ -162,7 +187,7 @@ Probably the most important block of the Transformer architecture, this block wi
 
 <p align="center" >
   
-  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/e13cc4ad-17f7-4572-9e88-b35c7f43dc55"/>
+  <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/b17f03b5-d96d-4d58-9666-4c28a6469957"/>
 </p>
 
 - This tokens will go through 3 different Neural Networks, each one is trained to give 3 different vectors -> `Queries`, `Keys` & `Values`.
