@@ -233,7 +233,7 @@ Probably the most important block of the Transformer architecture, this block wi
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/f789ba04-60b5-4488-8915-fb5742c0ab0f"/>
 </p>
 
-This 2 tokens will be added and normalized, the normalization is a layer which each neuron connected to the network of the layer instead of use activations of a large range of positve and negative values normalization encapsulates this values within a smaller range, tipically centered around 0, this allow us to have a much more stable training as during the backpropagation phase and we actually perform a gradient step we are taking much more even steps so it is now easier to learn and hence it is faster, and now we can get to the optimal position or the optimal parameter values more consistently.
+- This 2 tokens will be added and normalized, the normalization is a layer which each neuron connected to the network of the layer instead of use activations of a large range of positve and negative values normalization encapsulates this values within a smaller range, tipically centered around 0, this allow us to have a much more stable training as during the backpropagation phase and we actually perform a gradient step we are taking much more even steps so it is now easier to learn and hence it is faster, and now we can get to the optimal position or the optimal parameter values more consistently.
 
 <p align="center"> 
 
