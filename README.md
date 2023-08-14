@@ -100,9 +100,12 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 
 <p align="center">
   
-<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/27f27e98-914a-492b-8339-2a41ce0803bf"/>
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/cd6d8a4b-d403-4b90-b4c1-0fc54cfb8ac4"/>
 
 </p>
+
+
+
 
 - 🟦 **Input embeddings**:
 
