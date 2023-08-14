@@ -150,6 +150,13 @@ The Transformer is divided in 3 main blocks, and 2 of them has the most importan
 
 - 🟨 **Encoder**:
 
+<p align="center">
+  
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/1d15a04e-f343-45c8-92e1-855c9193c792"/>
+</p>
+
+
+
 - 🟩 **Decoder**:
 
 
