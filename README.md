@@ -240,7 +240,7 @@ This 2 tokens will be added and normalized, the normalization is a layer which e
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/2ea9c7e4-e5a6-47a8-a5fd-e223aa85dab4"/>
 </p>
 
-Finally, once we have our token(matrix) normalized is easier to learn so pass it Feed Forward Neural Network to learn/train, then we normalize again the token in order to remove workload to the last main block the `Decoder`.
+Finally, once we have our token(matrix) normalized is easier to learn so we pass it to a Feed Forward Neural Network to learn/train, then we normalize again the token in order to remove workload to the last main block the `Decoder`.
 
 - 🟩 **Decoder**:
 
