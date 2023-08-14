@@ -191,6 +191,12 @@ Probably the most important block of the Transformer architecture, this block wi
 
 ### Add & Normalize + Feed Forward + Add & Normalize blocks
 
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/80c4c570-09fe-4a5a-9526-3c3553adcc97"/>
+</p>
+
+
 - 🟩 **Decoder**:
 
 
