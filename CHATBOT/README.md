@@ -111,3 +111,32 @@ Same as before but with an infinite loop and an input var.
 
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/52052f76-57c6-4797-abed-f5c80b992c3c"/>
 </p>
+
+## Frontend with Gradio
+Gradio will allow us to create an easy coded web page where we can use out chatbot, but first let's see how it works with a little example: 
+```python
+import gradio as gr
+
+def greeting(name,daylight,farenheit_temp):
+    greeting = "Good morning" if daylight == True else "Good night"
+    temperature = round((farenheit_temp-32)*5/9)
+    greetings = f"{greeting} {name}. Today's temperature is {temperature} Celsius degrees"
+    return greetings
+    
+
+app = gr.Interface(fn=greeting,
+                   inputs=["text","checkbox", gr.Slider(0,120)],
+                   outputs="text")
+
+app.launch()
+```
+We define a var as `app` which is an interface (``gradio`` library and ``Interface`` object), `Interface` has 3 parameters:
+- **Function (fn)**: In this case `greeting`, which has at the same time 3 parameters and returns a text.
+- **inputs**: The inputs for the `greeting` function.
+- **outputs**: The ouput from the `greeting` function.
+
+When we execute this code at the console will print a link, we click it `Ctrl+left_click` and then we will something like this:
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/74c0ed3a-dc6a-4d45-ae93-187660a2aa29"/>
+</p>
