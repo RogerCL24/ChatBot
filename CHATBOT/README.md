@@ -84,3 +84,6 @@ chatbot = openai.Completion.create(engine="text-davinci-003",
                                    max_tokens=2048)
 print(chatbot.choices[0].text)
 ```
+Basically we are creating an instance, `chatbot` var, now we use the ``openai`` library -> then we use the task `Completion` (output) and `create` -> and finally we specify an engine `text-davinci-003` <sub> Check all models [here](https://platform.openai.com/account/rate-limits) </sub>, the prompt (input) `What is ChatGPT?` and the limit of tokens (words) of the answer `2048`. At last we print it, you can see the answer of this code execution at [chat.ipynb](https://github.com/RogerCL24/ChatBot/blob/main/CHATBOT/chat.ipynb).
+
+Now 
