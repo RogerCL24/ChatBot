@@ -135,7 +135,7 @@ We define a var as `app` which is an interface (``gradio`` library and ``Interfa
 - **inputs**: The inputs for the `greeting` function.
 - **outputs**: The ouput from the `greeting` function.
 
-When we execute this code at the console it will print a link, we click it `Ctrl+left_click` and then it will redirect us to local a host with the web page formerly implemented:
+When we execute this code at the console it will print a link, we click it `Ctrl+left_click` and then it will redirect us to a local host with the web page formerly implemented:
 <p align="center">
 
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/c1ffe326-9499-4a96-9528-1cc1a06d14a4"/>
