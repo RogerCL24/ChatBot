@@ -269,7 +269,7 @@ Finally, once we have our token(matrix) normalized is easier to learn so we pass
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/0690356f-2e79-4471-8b23-2fb47d845f03"/>
 </p>
 
-- For that reason the name of the attention blocs has the word **Masked**, we are masking the unkown words with a 0 and unmaskig the knowned words wiht another value, that gives us a lower diagonal matrix.
+- For that reason the name of the attention blocs has the word **Masked**, we are masking the unkown words with a 0 and unmaskig the known words with another value, that gives us a lower diagonal matrix.
 
 <p align="center">
 
