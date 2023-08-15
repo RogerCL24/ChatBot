@@ -285,7 +285,7 @@ Finally, once we have our token(matrix) normalized is easier to learn so we pass
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/02f232ea-eb28-43bb-b5ea-389ebbef10ad"/>
 </p>
 
-- Finally, and passing by the feed forward neural network, we have our model trained, the output of the decoder will go through a neural network with a softmax layer, the softmax funciton will find all the probabilities of the ouput vector, that means, if our output vector is the whole dictionary, the position (word) where we have the largest numeric value means that it has the highest probability to be the next word in the sequence or the word to be translated.
+- Finally, and passing by the feed forward neural network, we have our model trained, the output of the decoder will go through a neural network with a softmax layer, the softmax function will find all the probabilities of the ouput vector, that means, if our output vector is the whole dictionary, the position (word) where we have the largest numeric value means that it has the highest probability to be the next word in the sequence or the word to be translated.
 
 <p align="center">
 
