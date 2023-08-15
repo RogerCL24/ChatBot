@@ -39,3 +39,34 @@ With this library we can supply new data to _LangChain_ in order to transform th
 Finally, _Gradio_ can generate interfaces to interact with trained models with a few code lines, dependending on the complexity of the interface that we want. <sub> More info [https://www.gradio.app/guides/quickstart](https://www.gradio.app/guides/quickstart) </sub>
 
 ## SETUP
+
+We are going to be using the _Jupyter_ notebooks at VScode to implement the chatbot.
+
+### Virtual environment
+In this case we selected venv of python to create the virtual environment, you can use anaconda in your cmd as well, but commands will differ.
+
+- Create the workpace and the directory which you are going to create the virtual environment, then use this prompt in VScode cmd to create the venv:
+
+```bash
+python3 -m venv virtual_env_name
+```
+- Now, to activate it:
+```bash
+source virtual_env_name/bin/activate
+```
+Fine, now we go with the libraries:
+
+```bash
+pip install openai
+pip install gradio
+pip install gpt-index
+pip install langchain
+```
+And also we are going to need another library in our virtual environment if we want to use this venv as a kernel where our files are going to be executed over.
+
+```bash
+pip install ipykernel
+python -m ipykernel install --user --name=kernel_name
+```
+
+Finally we create a `.ipynb` file in the same directory as the venv, <sub> You need to install _Jupyter_ extension from microsoft if you do not have it already </sub>, then we select the virtual environment where the file is going to be executed at `Select kernel` <sub> Upper right corner </sub>, we will select _Python Environments_ -> and see the venv named **kernel_name** <sub> from the former code </sub>
