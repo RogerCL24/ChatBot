@@ -138,5 +138,5 @@ We define a var as `app` which is an interface (``gradio`` library and ``Interfa
 When we execute this code at the console will print a link, we click it `Ctrl+left_click` and then we will something like this:
 <p align="center">
 
-<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/74c0ed3a-dc6a-4d45-ae93-187660a2aa29"/>
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/c1ffe326-9499-4a96-9528-1cc1a06d14a4"/>
 </p>
