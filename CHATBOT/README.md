@@ -86,4 +86,28 @@ print(chatbot.choices[0].text)
 ```
 Basically we are creating an instance, `chatbot` var, now we use the ``openai`` library -> then we use the task `Completion` (output) and `create` -> and finally we specify an engine `text-davinci-003` <sub> Check all models [here](https://platform.openai.com/account/rate-limits) </sub>, the prompt (input) `What is ChatGPT?` and the limit of tokens (words) of the answer `2048`. At last we print it, you can see the answer of this code execution at [chat.ipynb](https://github.com/RogerCL24/ChatBot/blob/main/CHATBOT/chat.ipynb).
 
-Now 
+Now let's do the same but through the console and with any prompt to make sure it works.
+```python
+import openai
+
+openai.api_key = "<API-KEY>"
+
+while True:
+
+    prompt=input("\n Send a message: ")
+    
+    if prompt == 'Leave' or prompt == 'leave':
+        break
+
+    chatbot = openai.Completion.create(engine="text-davinci-003",
+                                    prompt=prompt,
+                                    max_tokens=2048)
+
+    print(chatbot.choices[0].text)
+```
+Same as before but with an infinite loop and an input var.
+- Example:
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/52052f76-57c6-4797-abed-f5c80b992c3c"/>
+</p>
