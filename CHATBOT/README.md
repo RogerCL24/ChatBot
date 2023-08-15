@@ -3,7 +3,7 @@
 ## DOCUMENTATION
 
 ### OpenAI API
-We visit the [OpenAI](https://platform.openai.com/docs/api-reference) web page, then we log and go to Manage Account > Usage, we will see that we have $18.00 for a free trial usage:
+We visit the [OpenAI](https://platform.openai.com/docs/api-reference) web page, then we log and go to Manage Account > Usage, we will see that we have _$18.00_ <sub> If you sign up before 2023 </sub> or _$5.00_ <sub> Otherwise </sub> for a free trial usage:
 
 <p align="center"> 
 
@@ -70,3 +70,17 @@ python -m ipykernel install --user --name=kernel_name
 ```
 
 Finally we create a `.ipynb` file in the same directory as the venv, <sub> You need to install _Jupyter_ extension from microsoft if you do not have it already </sub>, then we select the virtual environment where the file is going to be executed at `Select kernel` <sub> Upper right corner </sub>, we will select _Python Environments_ -> and see the venv named **kernel_name** <sub> from the former code </sub>.
+
+## API requests 
+In order to try the API's requests we have to create an API key first, therefore we log at the OpenAI web page, then here [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) and finally we create a new key which we have to copy and paste it at `<API-KEY>` gap.
+
+```python
+import openai
+
+openai.api_key = "<API-KEY>"
+
+chatbot = openai.Completion.create(engine="text-davinci-003",
+                                   prompt="What is ChatGPT?",
+                                   max_tokens=2048)
+print(chatbot.choices[0].text)
+```
