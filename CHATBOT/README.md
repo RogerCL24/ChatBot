@@ -45,7 +45,7 @@ We are going to be using the _Jupyter_ notebooks at VScode to implement the chat
 ### Virtual environment
 In this case we selected venv of python to create the virtual environment, you can use anaconda in your cmd as well, but the following commands will differ.
 
-- Create the workpace and the directory which you are going to create the virtual environment, then use this prompt in VScode cmd to create the venv:
+- Create the workspace and the directory which you are going to create the virtual environment, then use this prompt in VScode cmd to create the venv:
 
 ```bash
 python3 -m venv virtual_env_name
