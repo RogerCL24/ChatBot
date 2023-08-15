@@ -113,7 +113,7 @@ Same as before but with an infinite loop and an input var.
 </p>
 
 ## Frontend with Gradio
-Gradio will allow us to create an easy coded web page where we can use out chatbot, but first let's see how it works with a little example: 
+Gradio will allow us to create an easy coded web page where we can use our chatbot, but first let's see how it works with a little example: 
 ```python
 import gradio as gr
 
