@@ -43,7 +43,7 @@ Finally, _Gradio_ can generate interfaces to interact with trained models with a
 We are going to be using the _Jupyter_ notebooks at VScode to implement the chatbot.
 
 ### Virtual environment
-In this case we selected venv of python to create the virtual environment, you can use anaconda in your cmd as well, but commands will differ.
+In this case we selected venv of python to create the virtual environment, you can use anaconda in your cmd as well, but the following commands will differ.
 
 - Create the workpace and the directory which you are going to create the virtual environment, then use this prompt in VScode cmd to create the venv:
 
