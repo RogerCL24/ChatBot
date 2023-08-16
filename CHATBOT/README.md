@@ -1,6 +1,6 @@
 # CHATBOT 
 
-## DOCUMENTATION
+## DOCUMENTATION 📍
 
 ### OpenAI API
 We visit the [OpenAI](https://platform.openai.com/docs/api-reference) web page, then we log and go to Manage Account > Usage, we will see that we have _$18.00_ <sub> If you sign up before 2023 </sub> or _$5.00_ <sub> Otherwise </sub> for a free trial usage:
@@ -38,7 +38,7 @@ With this library we can supply new data to _LangChain_ in order to transform th
 
 Finally, _Gradio_ can generate interfaces to interact with trained models with a few code lines, dependending on the complexity of the interface that we want. <sub> More info [https://www.gradio.app/guides/quickstart](https://www.gradio.app/guides/quickstart) </sub>
 
-## SETUP
+## SETUP 📍
 
 We are going to be using the _Jupyter_ notebooks at VScode to implement the chatbot.
 
@@ -71,7 +71,7 @@ python -m ipykernel install --user --name=kernel_name
 
 Finally we create a `.ipynb` file in the same directory as the venv, <sub> You need to install _Jupyter_ extension from microsoft if you do not have it already </sub>, then we select the virtual environment where the file is going to be executed at `Select kernel` <sub> Upper right corner </sub>, we will select _Python Environments_ -> and see the venv named **kernel_name** <sub> from the former code </sub>.
 
-## API requests 
+## API requests 📍
 In order to try the API's requests we have to create an API key first, therefore we log at the OpenAI web page, then here [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) and finally we create a new key which we have to copy and paste it at `<API-KEY>` gap.
 
 ```python
@@ -112,7 +112,7 @@ Same as before but with an infinite loop and an input var.
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/52052f76-57c6-4797-abed-f5c80b992c3c"/>
 </p>
 
-## Frontend with Gradio
+## Frontend with Gradio 📍
 Gradio will allow us to create an easy coded web page where we can use our chatbot, but first let's see how it works with a little example: 
 ```python
 import gradio as gr
