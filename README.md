@@ -1,4 +1,5 @@
 # Chatbot background
+> [NOTE!]
 > This repository has been made after [ANN](https://github.com/RogerCL24/ANN), some concepts are already explained there.
 ## NLP (Natural Language Processing)
 Example: We want to train a model in order to make it classify documents in a positive box comment or in negative box comment, the first thing to come up in our mind is using a normal Neural Network like this one, the input will be the text, then the hidden layers decides in which output perceptron of the output layer is the text classified (positive or negative).
