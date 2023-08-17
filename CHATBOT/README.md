@@ -140,3 +140,12 @@ When we execute this code at the console it will print a link, we click it `Ctrl
 
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/c1ffe326-9499-4a96-9528-1cc1a06d14a4"/>
 </p>
+
+## Training 📍
+> [!NOTE]
+> Code from [training.py](training.py) 
+
+## Predict 📍
+
+## Example & Conclusion 📍
+
