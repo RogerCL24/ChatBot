@@ -153,7 +153,17 @@ os.environ['OPENAI_API_KEY'] = "<API-KEY>"
 > ``import os`` library
 
 - Then we define the parameters we are going to use:
+```python
+max_input = 4098
+tokens = 256
+chunk_size = 600
+max_chunk_overlap = 0.1
+```
   - _max_input_:
+  - _
+  - _
+  - 
+ 
 ```python
 max_input = 4098
 tokens = 256
