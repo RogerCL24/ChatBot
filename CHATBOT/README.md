@@ -3,7 +3,9 @@
 ## DOCUMENTATION 📍
 
 ### OpenAI API
-We visit the [OpenAI](https://platform.openai.com/docs/api-reference) web page, then we log and go to Manage Account > Usage, we will see that we have _$18.00_ <sub> If you sign up before 2023 </sub> or _$5.00_ <sub> Otherwise </sub> for a free trial usage:
+We visit the [OpenAI](https://platform.openai.com/docs/api-reference) web page, then we log and go to Manage Account > Usage, we will see that we have _$18.00_ <sub> If you sign up before 2023 </sub> or _$5.00_ <sub> Otherwise </sub> for a free trial usage: 
+
+<sub> Otherwise if you desire a billing to more models and services is available </sub>
 
 <p align="center"> 
 
