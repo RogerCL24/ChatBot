@@ -159,17 +159,12 @@ tokens = 256
 chunk_size = 600
 max_chunk_overlap = 0.1
 ```
+-
   - _max_input_:
-  - _
-  - _
-  - 
+  - _tokens_:
+  - _chunck_size_:
+  - _max_chunk_overlap_:
  
-```python
-max_input = 4098
-tokens = 256
-chunk_size = 600
-max_chunk_overlap = 0.1
-```
 
 ## Predict 📍
 
