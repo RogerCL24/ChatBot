@@ -163,7 +163,7 @@ max_chunk_overlap = 0.1
   - _max_input_: Max input/prompt size allowed, namely, max number of characters.
   - _tokens_: Max amount of tokens from the prompt.
   - _chunck_size_: Max prompt chunk (fragment) size allowed after being split, that means, up to how many tokens can each chunk have from the split prompt.
-  - _max_chunk_overlap_: Max allowed value for the overlapping between chunks of the prompt. We have to know that the prompts are split in littles pieces (chunks) in order to process them.
+  - _max_chunk_overlap_: Max allowed value for the overlapping between chunks of the prompt. We have to know that the prompts are split in littles pieces (chunks) in order to process them. **Example** -> the words _similar_ and _similarity_, the tokens of the word _similar_ can overlap the tokens of the word _similarity_.
 
 - Finally we define the function to train out model `text-ada-001`:
 ```python
@@ -181,7 +181,13 @@ def training(path):
 training("data")
 ```
 > [!NOTE]
-> `data` is the directory where is the docs _.text_ are placed, [data](data)
+> `data` is the directory where the _.text_ docs are placed, [data](data)
+> We need all the libraries from [training.py](training.py)
+
+- 
+  - _openai.api_: We have to grant our key to openai in order to use their services.
+  - _docs_: Read the docs placed at `path`.
+  - _Prompt_helper_: 
 
 
 ## Predict 📍
