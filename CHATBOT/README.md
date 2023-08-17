@@ -143,7 +143,15 @@ When we execute this code at the console it will print a link, we click it `Ctrl
 
 ## Training 📍
 > [!NOTE]
-> Code from [training.py](training.py) 
+> Code from [training.py](training.py)
+
+- First we store the `API-KEY` at the enviornment var with:
+```python
+os.environ['OPENAI_API_KEY'] = "<API-KEY>"
+```
+> [!IMPORTANT]
+> ``import os`` library
+
 
 ## Predict 📍
 
