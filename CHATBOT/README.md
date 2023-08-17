@@ -160,11 +160,29 @@ chunk_size = 600
 max_chunk_overlap = 0.1
 ```
 -
-  - _max_input_:
-  - _tokens_:
-  - _chunck_size_:
-  - _max_chunk_overlap_:
- 
+  - _max_input_: Max input/prompt size allowed, namely, max number of characters.
+  - _tokens_: Max amount of tokens from the prompt.
+  - _chunck_size_: Max prompt chunk (fragment) size allowed after being split, that means, up to how many tokens can each chunk have from the split prompt.
+  - _max_chunk_overlap_: Max allowed value for the overlapping between chunks of the prompt. We have to know that the prompts are split in littles pieces (chunks) in order to process them.
+
+- Finally we define the function to train out model `text-ada-001`:
+```python
+
+def training(path):
+    openai.api_key = os.environ["OPENAI_API_KEY"]
+    docs = SimpleDirectoryReader(path).load_data()
+    Prompt_helper = PromptHelper(max_input, tokens, max_chunk_overlap, chunk_size_limit=chunk_size)
+    model = LLMPredictor(llm=OpenAI(temperature=0,model_name="text-ada-001",max_tokens=tokens))
+    context = ServiceContext.from_defaults(llm_predictor=model, prompt_helper=Prompt_helper)
+
+    index_model = GPTVectorStoreIndex.from_documents(docs, service_context=context)
+    index_model.storage_context.persist(persist_dir='Store')
+
+training("data")
+```
+> [!NOTE]
+> `data` is the directory where is the docs _.text_ are placed, [data](data)
+
 
 ## Predict 📍
 
