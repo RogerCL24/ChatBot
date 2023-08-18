@@ -239,8 +239,18 @@ app.launch(share=False)
 
 ## Example & Conclusion 📍
 This example will be done comparing the output of the trained chatbot <sub> With [data](data) docs </sub> and the [datos2.txt](data/datos2.txt) document using an specific prompt to test if the model has truly learned/trained.
-![2](https://github.com/RogerCL24/ChatBot/assets/90930371/947cf7a3-e99f-41e8-ac6b-921cd9b16bf6)
-![3](https://github.com/RogerCL24/ChatBot/assets/90930371/fc29fc7a-92d8-473e-b178-b3f2fd7ec9e6)
+<p align="center">
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/947cf7a3-e99f-41e8-ac6b-921cd9b16bf6"/>
+</p>
+
+<sub> Text from [datos2.txt](data/datos2.txt) document </sub>
+<p align="center"> 
+
+<img src="https://github.com/RogerCL24/ChatBot/assets/90930371/fc29fc7a-92d8-473e-b178-b3f2fd7ec9e6"/>
+</p>
+
+- The prompt is _Talk me about the education and the AI in the future_, make sense because we trained it with that data, as you can see out model uses sentences and information from the ``datos2.txt`` document.
 
 
 
