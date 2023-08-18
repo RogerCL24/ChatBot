@@ -183,8 +183,8 @@ def training(path):
 training("data")
 ```
 > [!NOTE]
-> `data` is the directory where the _.text_ docs are placed, [data](data)
-> We need all the libraries from [training.py](training.py)
+> `data` is the directory where the _.text_ docs are placed, [data](data).
+> Besides we need all the libraries from [training.py](training.py)
 
 - 
   - _openai.api_: We have to grant our key to openai in order to use their services.
