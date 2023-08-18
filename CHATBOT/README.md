@@ -238,6 +238,7 @@ app.launch(share=False)
 
 
 ## Example & Conclusion 📍
+This example will be done comparing the output of the trained chatbot <sub> With [data](data) docs </sub> and the [datos2.txt](data/datos2.txt) document using an specific prompt to test if the model has truly learned/trained.
 
 
 [^1]: What is an index? Jerry Liu wrote "An index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://gpt-index.readthedocs.io/en/latest/core_modules/data_modules/index/root.html](https://gpt-index.readthedocs.io/en/latest/core_modules/data_modules/index/root.html)
