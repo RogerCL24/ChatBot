@@ -224,7 +224,13 @@ def chatbot(input_text):
   - **_response_**: In order to use the ``query_engine`` we pass the query (_input_text_) as a parameter and store the output (_response_) to stream it later.
     
 ### Interface
-- We will be using gradio like in the former example [Frontend with Gradio](#frontend-with-gradio)
+- We will be using gradio like in the former example, [Frontend with Gradio](#frontend-with-gradio):
+```python
+app = gr.Interface(fn=chatbot,
+                   inputs=gr.inputs.Textbox(lines=5,label="Send a message"),
+                   outputs="text",
+                   title="Tekhmos Chatbot")
+```
 
 
 
