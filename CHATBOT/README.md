@@ -114,7 +114,7 @@ Same as before but with an infinite loop and an input var.
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/52052f76-57c6-4797-abed-f5c80b992c3c"/>
 </p>
 
-<a name="Frontend with Gradio 📍"></a>
+<a name="frontend-with-gradio"></a>
 ## Frontend with Gradio 📍
 Gradio will allow us to create an easy coded web page where we can use our chatbot, but first let's see how it works with a little example: 
 ```python
@@ -224,7 +224,7 @@ def chatbot(input_text):
   - **_response_**: In order to use the ``query_engine`` we pass the query (_input_text_) as a parameter and store the output (_response_) to stream it later.
     
 ### Interface
-- We will be using gradio like in the former example [Frontend with Gradio](#Frontend-with-Gradio-📍)
+- We will be using gradio like in the former example [Frontend with Gradio](#frontend-with-gradio)
 
 
 
