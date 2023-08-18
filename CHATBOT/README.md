@@ -197,7 +197,7 @@ training("data")
     
   <sub> More info about the parameters, [https://api.python.langchain.com/en/latest/llms/langchain.llms.openai.OpenAI.html](https://api.python.langchain.com/en/latest/llms/langchain.llms.openai.OpenAI.html) </sub>
   - **_context_**: We define which model we are going to use and the prompt helper that is going to lead that model.
-  - **_index_model_**: We take a set of text documents, calculate the vectors for these documents using our model, and then build a vector index (``JSON`` object) to facilitate efficient search and retrieval of similar documents in the future.
+  - **_index_model_**: We take a set of text documents, calculate the vectors for these documents using our model, and then build a vector index[^1] (``JSON`` object) to facilitate efficient search and retrieval of similar documents in the future.
 - Finally, we store the JSON object in our disk, the directory where we store it is _Store_ in this case.
 
 ## Predict 📍
@@ -215,11 +215,12 @@ def chatbot(input_text):
     response = query_engine.query(input_text)
     return response.response
 ```
-- - **_storage_context_**:
-  - **_index_**:
-  - **_query_engine_**:
+- - **_storage_context_**: To load data, we simply need to re-create the storage context using the same configuration (e.g. pass in the same persist_dir). 
+  - **_index_**: We can then load specific indices from the StorageContext, in this case we don't need to specify index_id if there's only one index in storage context.
+  - **_query_engine_**: The data will be queried as an index 
   - **_response_**:
 
 
 ## Example & Conclusion 📍
 
+[^1]: What is an index? Jerry Liu wrote an index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/](https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/)
