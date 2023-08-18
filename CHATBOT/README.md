@@ -147,7 +147,7 @@ When we execute this code at the console it will print a link, we click it `Ctrl
 > [!NOTE]
 > Code from [training.py](training.py)
 
-- First we store the `API-KEY` at the enviornment var with:
+- First, we store the `API-KEY` at the enviornment var with:
 ```python
 os.environ['OPENAI_API_KEY'] = "<API-KEY>"
 ```
@@ -201,6 +201,25 @@ training("data")
 - Finally, we store the JSON object in our disk, the directory where we store it is _Store_ in this case.
 
 ## Predict 📍
+> [!NOTE]
+> Code from [predict.py](predict.py)
+
+- Store the API key as before
+- Define the function which is going to update the interface depending on the `input_text`:
+```python
+def chatbot(input_text):
+    openai.api_key = os.environ['OPENAI_API_KEY']
+    storage_context = StorageContext.from_defaults(persist_dir='Store')
+    index = load_index_from_storage(storage_context)
+    query_engine = index.as_query_engine()
+    response = query_engine.query(input_text)
+    return response.response
+```
+- - **_storage_context_**:
+  - **_index_**:
+  - **_query_engine_**:
+  - **_response_**:
+
 
 ## Example & Conclusion 📍
 
