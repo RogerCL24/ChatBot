@@ -223,4 +223,4 @@ def chatbot(input_text):
 
 ## Example & Conclusion 📍
 
-[^1]: What is an index? Jerry Liu wrote an index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/](https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/)
+[^1]: What is an index? Jerry Liu wrote "An index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/](https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/)
