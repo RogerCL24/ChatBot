@@ -190,10 +190,10 @@ training("data")
   - **_openai.api_**: We have to grant our key to openai in order to use their services.
   - **_docs_**: Read the docs placed at `path`.
   - **_Prompt_helper_**: Personalize the prompt features in order to meet our needs and helps the LLM deal with the context, most of the parameters if they are not defined at the argument space can be unlimited <sub> For instance, ``chunk_size_limit`` value would be none </sub>.
-  - ** _model_**: Which model will be used, we specify from what source is that model, `llm=OpenAI` and the parameters:
+  - **_model_**: Which model will be used, we specify from what source is that model, `llm=OpenAI` and the parameters:
     - **_temperature_**: Cost level we can reach, 0 means free trial usage and the response will be deterministic <sub> Always returns the same completion </sub>, a higher temperature value makes the completion more diverse and creative.
     - **_model_name_**:
-    - ** _max_tokens_**:
+    - **_max_tokens_**:
   - **_context_**: We define which model we are going to use and the prompt helper that is going to lead that model.
 
 
