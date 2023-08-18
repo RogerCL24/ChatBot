@@ -197,7 +197,8 @@ training("data")
     
   <sub> More info about the parameters, [https://api.python.langchain.com/en/latest/llms/langchain.llms.openai.OpenAI.html](https://api.python.langchain.com/en/latest/llms/langchain.llms.openai.OpenAI.html) </sub>
   - **_context_**: We define which model we are going to use and the prompt helper that is going to lead that model.
-
+  - **_index_model_**: We take a set of text documents, calculate the vectors for these documents using our model, and then build a vector index (``JSON`` object) to facilitate efficient search and retrieval of similar documents in the future.
+- Finally, we store the JSON object in our disk, the directory where we store it is _Store_ in this case.
 
 ## Predict 📍
 
