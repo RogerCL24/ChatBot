@@ -217,10 +217,12 @@ def chatbot(input_text):
 ```
 - - **_storage_context_**: To load data, we simply need to re-create the storage context using the same configuration (e.g. pass in the same persist_dir). 
   - **_index_**: We can then load specific indices from the StorageContext, in this case we don't need to specify index_id if there's only one index in storage context.
-  - **_query_engine_**: The data will be queried as an index 
+  - **_query_engine_**[^2]: Creates a Retriever instance with the default values for a given index retriever[^3].
   - **_response_**:
 
 
 ## Example & Conclusion 📍
 
-[^1]: What is an index? Jerry Liu wrote "An index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/](https://www.mikulskibartosz.name/llama-index-which-index-should-you-use/)
+[^1]: What is an index? Jerry Liu wrote "An index manages the state: abstracting away underlying storage, and exposing a view over processed data & associated metadata.” LlamaIndex indexes nodes. Nodes are chunks of the documents we load from the storage. More info at [https://gpt-index.readthedocs.io/en/latest/core_modules/data_modules/index/root.html](https://gpt-index.readthedocs.io/en/latest/core_modules/data_modules/index/root.html)
+[^2]: Takes in a natural language query, and returns a rich response. It is most often (but not always) built on one or many Indices via Retrievers. You can compose multiple query engines to achieve more advanced capability. More info at [https://gpt-index.readthedocs.io/en/latest/core_modules/query_modules/query_engine/root.html](https://gpt-index.readthedocs.io/en/latest/core_modules/query_modules/query_engine/root.html)
+[^3]: Retrievers are responsible for fetching the most relevant context given a user query (or chat message). More info at [https://gpt-index.readthedocs.io/en/latest/core_modules/query_modules/retriever/root.html](https://gpt-index.readthedocs.io/en/latest/core_modules/query_modules/retriever/root.html)
