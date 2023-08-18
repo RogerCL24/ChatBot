@@ -114,6 +114,7 @@ Same as before but with an infinite loop and an input var.
 <img src="https://github.com/RogerCL24/ChatBot/assets/90930371/52052f76-57c6-4797-abed-f5c80b992c3c"/>
 </p>
 
+<a name="Frontend with Gradio"></a>
 ## Frontend with Gradio 📍
 Gradio will allow us to create an easy coded web page where we can use our chatbot, but first let's see how it works with a little example: 
 ```python
@@ -205,6 +206,8 @@ training("data")
 > Code from [predict.py](predict.py)
 
 - Store the API key as before
+
+### Function
 - Define the function which is going to update the interface depending on the `input_text`:
 ```python
 def chatbot(input_text):
@@ -216,9 +219,14 @@ def chatbot(input_text):
     return response.response
 ```
 - - **_storage_context_**: To load data, we simply need to re-create the storage context using the same configuration (e.g. pass in the same persist_dir). 
-  - **_index_**: We can then load specific indices from the StorageContext, in this case we don't need to specify index_id if there's only one index in storage context.
+  - **_index_**: We can then load specific indices from the StorageContext, in this case we don't need to specify _index_id_ (another parameter) if there's only one index in storage context.
   - **_query_engine_**[^2]: Creates a Retriever instance with the default values for a given index retriever[^3].
-  - **_response_**:
+  - **_response_**: In order to use the ``query_engine`` we pass the query (_input_text_) as a parameter and store the output (_response_) to stream it later.
+    
+### Interface
+- We will be using gradio like in the former example [Enlace a Mi Título](#Frontend-with-Gradio)
+
+
 
 
 ## Example & Conclusion 📍
