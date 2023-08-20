@@ -185,7 +185,7 @@ training("data")
 ```
 > [!NOTE]
 > `data` is the directory where the _.text_ docs are placed, [data](data).
-> Besides we need all the libraries from [training.py](CHATBOT/training.py)
+> Besides we need all the libraries from [training.py](training.py)
 
 - 
   - **_openai.api_**: We have to grant our key to openai in order to use their services.
@@ -203,7 +203,7 @@ training("data")
 
 ## Predict 📍
 > [!NOTE]
-> Code from [predict.py](CHATBOT/predict.py)
+> Code from [predict.py](predict.py)
 
 - Store the API key as before
 
