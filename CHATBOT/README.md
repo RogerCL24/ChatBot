@@ -146,7 +146,7 @@ When we execute this code at the console it will print a link, we click it `Ctrl
 
 ## Training 📍
 > [!NOTE]
-> Code from [training.py](training.py)
+> Code from [training.py](CHATBOT/training.py)
 
 - First, we store the `API-KEY` at the enviornment var with:
 ```python
@@ -203,7 +203,7 @@ training("data")
 
 ## Predict 📍
 > [!NOTE]
-> Code from [predict.py](predict.py)
+> Code from [predict.py](CHATBOT/predict.py)
 
 - Store the API key as before
 
