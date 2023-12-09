@@ -1,4 +1,4 @@
-# CHATBOT 
+# CHATBOT (deprecated)
 
 ## DOCUMENTATION 📍
 
